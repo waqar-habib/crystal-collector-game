@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>The Gem Collector Game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lilita+One|Oswald" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 mb-3 pb-2 text-center">
+                    <p class="heading">THE GEM COLLECTOR GAME</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 d-inline-block">
+                    <div class="row d-flex justify-content-center" id="left">
+                            <p id="counters">Total Score :</p>
+                            <span id="total">0</span>
+                    </div>
+                    <div class="row d-flex justify-content-center" id="left">
+                            <p id="counters">Wins:</p>
+                            <span id="wins">0</span>
+                    </div>
+                    <div class="row d-flex justify-content-center" id="left">
+                            <p id="counters">Losses:</p>
+                            <span id="losses">0</span>
+                    </div>
+                    <div class="row d-flex justify-content-center" id="left">
+                            <button type="button" class="btn btn-light">
+                                <i class="fas fa-gamepad"></i>
+                                PLAY GAME!
+                            </button>
+                    </div>
+                </div>
+                <div class="col-4 d-inline-block">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-4 d-inline-block" id="images">
+                            <img class="gem-img img-responsive" id="gem1" src="assets/images/gem1.png" alt="gem 1"/>
+                        </div>
+                        <div class="col-4 d-inline-block" id="images">
+                            <img class="gem-img img-responsive" id="gem2" src="assets/images/gem2.png" alt="gem 2"/>  
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                            <div class="col-4 d-inline-block" id="images">
+                                <img class="gem-img img-responsive" id="gem3" src="assets/images/gem3.png" alt="gem 3"/>
+                            </div>
+                            <div class="col-4 d-inline-block" id="images">
+                                <img class="gem-img img-responsive" id="gem4" src="assets/images/gem4.png" alt="gem 4"/>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-4 d-inline-block">
+                    <div class="row d-flex justify-content-center" id="col3">
+                        <p id="winning-heading">The Winning Number:</p>
+                        <span id="winningNumber"></span>
+                    </div>
+                    <div class="row d-flex justify-content-center" id="col3">
+                        <p id="instructions">
+                            Behind each gem is a value that is only known to the computer. To win, click on the right buttons to add your score to match The Winning Number. If you go over, you lose.
+                        </p>                
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <script src="./assets/javascript/game.js" async defer></script>
+    </body>
+</html>
